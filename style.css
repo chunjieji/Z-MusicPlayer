@@ -1,0 +1,204 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.left{
+  width: 50%;
+}
+.right{
+  width: 50%;
+  position: relative;
+  background-image: url(./assets/菅田将暉\ -\ まちがいさがし.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.song-img{
+  display: none;
+}
+@media screen and (max-width: 1366px){
+  .left{
+    display: none;
+  }
+  .right{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1366px) and (min-width: 375px){
+  .song-img{
+    display: block;
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 376px){
+  .song-img{
+    display: block;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+html,body,.app,.left,.right{
+  height: 100%;
+}
+.app{
+  display: flex;
+}
+
+
+
+.left-ablum-img{
+  background-color: black;
+  width: 100%;
+  height: 500px;
+  background-image: url('./assets/菅田将暉 - まちがいさがし.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.left-ablum-des{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 20px 0 20px;
+}
+.ablum-info{
+  margin-top: 12px;
+  font-size: 18px;
+
+}
+.song-header{
+  height: 85%;
+  backdrop-filter: blur(30px);
+}
+.song-list{
+  height: 70%;
+}
+.song-name{
+  height: 30%;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  box-sizing: border-box;
+  color: aliceblue;
+  font-size: 24px;
+  font-weight: bold;
+  justify-content: space-between;
+}
+.song-list-item{
+  color: aliceblue;
+  height: 76px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 14px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 10% 0 10%;
+}
+.unfocus{
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(to bottom,transparent 50%, rgba(150, 150, 150, 0.43) 50%) 0 0 100%/1px 0;
+}
+.focus{
+  backdrop-filter: blur(50px);
+  background-color:rgba(150, 150, 150, 0.43); 
+}
+.song-list-item-left{
+  width: 250px;
+  display: flex;
+}
+.song-ablum{
+  margin-left: 24px
+}
+.song-play{
+  width: 20px; height: 20px; 
+  background-image: url('./assets/music-player-btn.png');
+  background-size: 66px 44px;
+  background-position: -45px -1px;
+  display: block;
+}
+.song-pause{
+  display: none;
+  width: 20px; height: 20px; 
+  background-image: url('./assets/music-player-btn.png');
+  background-size: 66px 44px;
+  background-position: -45px -23px;
+}
+
+.player{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 15%;
+  backdrop-filter: blur(50px);
+}
+.player-display{
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+/* 播放器控件 */
+.play-btn-group{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20% 0 20%;
+}
+.player-btn{
+  width: 20px; height: 20px; 
+  background-image: url('./assets/music-player-btn.png');
+  background-size: 66px 44px;
+}
+.pre{
+  background-position: -23px -23px;
+}
+.next{
+  background-position:  -1px -23px;
+}
+.pause{
+  background-position: -45px -23px;
+  display: none;
+}
+.loop{
+  background-position: -1px -1px;
+  display: block;
+}
+.single-loop{
+  background-position: -23px -1px;
+  display: none;
+}
+.play{
+  background-position: -45px -1px;
+  display: block;
+}
+
+
+/* 播放进度条 */
+.player-bar{
+  position: absolute;
+  top: -2px;
+  width: 100%;
+  height: 6px;
+}
+.all-progress{
+  position: absolute;
+  float: left;
+  width: 100%;
+  height: 4px;
+  /* background-color: rgb(121, 111, 99); */
+}
+.current-progress{
+  float: left;
+  height: 4px;
+  width: 0;
+  background-color: #5e5ac9;
+}
+
+
+

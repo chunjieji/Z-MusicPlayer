@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>音乐播放器</title>
+</head>
+<body>
+  <div class='app'>
+    <audio class='audio' src="./music/菅田将暉 - まちがいさがし.mp3"></audio>
+    <div class='left'>
+      <div class="left-ablum-img"></div>
+      <div class="left-ablum-des">
+        <h1 class="ablum-name">《LOVE》</h1>
+        <p class="ablum-info">影视歌三栖的日本新生代小天王菅田将晖2017年以单曲〈从未见过的景色〉正式以歌手身份出道，
+          2018年发行的〈告别挽歌〉更获得日本LINE MUSIC的年度排行榜冠军，而个人首张专辑《PLAY》也在发行首周就获得ORICON公信榜亚军的好成绩！ 
+          2019年，继以好友米津玄师跨刀创作的数位单曲〈找错游戏〉席卷台日两地各大排行榜后，
+          菅田将晖将正式发行个人的第二张音乐专辑《LOVE》！</p>
+      </div>
+    </div>
+    <div class='right'>
+      <div class='song-header'>
+        <div class="song-name"><p class="song-name-p">まちがいさがし</p><img class="song-img" src="./assets/菅田将暉 - まちがいさがし.jpg" alt=""></div>
+      <div class="song-list">    
+        <!-- <div class="song-list-item focus">
+          <div class="song-list-item-left">
+            <div class="song-play "></div>
+            <div class="song-ablum">菅田将暉/まちがいさがし</div>
+          </div>    
+          <div class="song-duration-time">3:10</div>
+        </div>
+        <div class="song-list-item unfocus">
+          <div class="song-list-item-left">
+            <div class="song-play "></div>
+            <div class="song-ablum">菅田将暉/まちがいさがし</div>
+          </div>    
+          <div class="song-duration-time">3:10</div>
+        </div> -->
+      </div>
+      </div>
+      <div class="player">
+        <div class="player-display">
+          <div class="player-bar">                     
+            <div class="all-progress"></div>    
+            <div class="current-progress"></div>      
+          </div>
+          <div class="play-btn-group">
+            <div class="player-btn pre"></div>
+            <div class="player-btn play"></div>
+            <div class="player-btn pause"></div>
+            <div class="player-btn next"></div>
+            <div class="player-display-song"></div>
+            <div class="player-current-time"></div>
+            <div class="player-duration-time"></div>
+            <div class="player-btn loop"></div>
+            <div class="player-btn single-loop"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
